@@ -1,14 +1,22 @@
 package illegaller.aida.dev.art.clocks;
 
-import android.app.*;
 import android.os.*;
+import android.support.v7.app.*;
 
-public class MainActivity extends Activity 
+public class MainActivity extends AppCompatActivity 
 {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(setResource("main","layout"));
+    }
+    
+    public int setResource(String nama, String tipe)
+    {
+        return getBaseContext().
+        getResources().
+        getIdentifier(nama, tipe, getBaseContext().
+        getPackageName());
     }
 }
