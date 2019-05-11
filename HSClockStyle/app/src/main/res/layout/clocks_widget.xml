@@ -24,6 +24,7 @@
 				android:layout_gravity="center"
 				android:gravity="center">
 
+                <!-- clock hour -->
 				<TextClock
 					android:padding="10.0dip"
 					android:format12Hour="hh"
@@ -34,10 +35,12 @@
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:singleLine="true"
-					android:textColor="#D9D9D9"
+					android:textColor="@color/green"
 					android:textSize="75sp"
 					android:layout_gravity="center"/>
 
+                
+                <!-- clock minute -->
 				<TextClock
 					android:padding="10.0dip"
 					android:format12Hour="mm"
@@ -48,7 +51,7 @@
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:singleLine="true"
-					android:textColor="#D9D9D9"
+					android:textColor="@color/brown"
 					android:textSize="75sp"
 					android:layout_gravity="center"/>
 

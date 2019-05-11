@@ -1,51 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
 
-    <LinearLayout
-        android:background="@android:color/black"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:orientation="vertical">
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
 
-        <FrameLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
+		<FrameLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent">
 
-            <illegaller.aida.dev.art.clocks.ImageViewBackground
-                android:layout_width="match_parent"
+			<illegaller.aida.dev.art.clocks.ImageViewBackground
+				android:layout_width="match_parent"
 				android:layout_height="match_parent"/>
 
-            <LinearLayout
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:gravity="center">
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="version 1.0.0"/>
+				<TextView
+					android:textStyle="bold"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/app_version"
+					android:textSize="16sp"
+					android:typeface="serif"/>
 
-            </LinearLayout>
+			</LinearLayout>
 
-            <ImageView
-                android:tint="#ff0000"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:src="@drawable/ic_logo_about"
-                android:layout_gravity="top|center"
-                android:layout_marginTop="35dp"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"/>
+			<ImageView
+				android:tint="@color/brown"
+				android:layout_height="100dp"
+				android:layout_width="100dp"
+				android:src="@drawable/ic_logo_about"
+				android:layout_gravity="top|center"
+				android:layout_marginTop="35dp"
+				android:scaleType="fitXY"
+				android:adjustViewBounds="true"/>
 
-        </FrameLayout>
+		</FrameLayout>
 
-    </LinearLayout>
+	</LinearLayout>
 
 </LinearLayout>
-
 
