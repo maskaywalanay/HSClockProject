@@ -17,6 +17,12 @@
             </intent-filter>
         </activity>
         
+        <!-- Activity About -->
+        <activity
+            android:name=".AboutUse"
+            android:label="@string/about_badge"
+            android:theme="@style/AppTheme" />
+        
         <!-- daftarkan widget disini -->
         <receiver android:name=".ClocksWidget">
             <intent-filter>

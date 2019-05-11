@@ -2,6 +2,10 @@
 <resources>
 
     <string name="app_name">HSClock Style</string>
-    
+    <string name="config_badge">Configuration</string>
+    <string name="about_badge">About</string>
+    <string name="exit_badge">Exit</string>
+
 
 </resources>
+
