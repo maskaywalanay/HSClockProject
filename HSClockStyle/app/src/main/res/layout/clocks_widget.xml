@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center">
+
+		<FrameLayout
+			android:layout_height="@dimen/frame_height"
+			android:layout_width="match_parent"
+			android:id="@+id/frame_container">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:gravity="center">
+
+				<TextClock
+					android:padding="10.0dip"
+					android:format12Hour="hh"
+					android:format24Hour="hh"
+					android:typeface="serif"
+					android:textStyle="bold"
+					android:id="@+id/clocks_hour"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:singleLine="true"
+					android:textColor="#D9D9D9"
+					android:textSize="75sp"
+					android:layout_gravity="center"/>
+
+				<TextClock
+					android:padding="10.0dip"
+					android:format12Hour="mm"
+					android:format24Hour="mm"
+					android:typeface="serif"
+					android:textStyle="normal"
+					android:id="@+id/clocks_minutes"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:singleLine="true"
+					android:textColor="#D9D9D9"
+					android:textSize="75sp"
+					android:layout_gravity="center"/>
+
+			</LinearLayout>
+
+		</FrameLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
