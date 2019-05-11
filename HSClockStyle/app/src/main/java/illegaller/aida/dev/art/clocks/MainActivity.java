@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity
         switch(item.getItemId())
         {
             case R.id.item1:
-                
+                // configuration 
+                startActivity(new Intent(this,CustomImageControl.class));
                 return true;
 
             case R.id.item2:

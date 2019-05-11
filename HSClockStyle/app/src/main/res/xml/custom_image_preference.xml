@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"  >
+    <ListPreference 
+        android:entries="@array/entri"
+        android:entryValues="@array/palu"
+        android:title="Pilih Gambar"
+        android:dialogTitle="Select Your Background"
+        android:key="pilih_gambar"
+    />
+</PreferenceScreen>
+

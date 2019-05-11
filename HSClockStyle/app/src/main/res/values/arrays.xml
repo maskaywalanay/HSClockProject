@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- entri dari pilihan gambar -->
+    <string-array name="entri">
+        <item>transparent</item>
+        <item>Blue line</item>
+        <item>Metal seamless</item>
+        <item>Motif daun</item>
+        <item>Sarang</item>
+        <item>Es kepal</item>
+        <item>Prism</item>
+        <item>Daun</item>
+
+
+    </string-array>
+    
+    <!-- nilai dari pilihan gambar -->
+    <string-array name="palu">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+</resources>
+

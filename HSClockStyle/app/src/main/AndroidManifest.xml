@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="illegaller.aida.dev.art.clocks" >
+    
+    <!-- menggunakan hak ijin tulis -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
 
     <application
         android:allowBackup="true"
@@ -20,6 +23,11 @@
         <!-- Activity About -->
         <activity
             android:name=".AboutUse"
+            android:label="@string/about_badge"
+            android:theme="@style/AppTheme" />
+        
+        <activity
+            android:name=".CustomImageControl"
             android:label="@string/about_badge"
             android:theme="@style/AppTheme" />
         
