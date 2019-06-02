@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        // TODO: Implement this method
         getMenuInflater().inflate(R.menu.app_menu,menu);
         return super.onCreateOptionsMenu(menu);
     }
@@ -25,16 +24,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
-        // TODO: Implement this method
+        
         switch(item.getItemId())
         {
             case R.id.item1:
-                // configuration 
                 startActivity(new Intent(this,CustomImageControl.class));
                 return true;
 
             case R.id.item2:
-                // Activity di panggil dari menu
                 startActivity(new Intent(this,AboutUse.class));
                 return true;
 

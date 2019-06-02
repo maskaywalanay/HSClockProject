@@ -9,27 +9,20 @@ public class CustomImageControl extends PreferenceActivity implements Preference
     @Override
     public boolean onPreferenceChange(Preference p1, Object p2)
     {
-        // TODO: Implement this method
         if(p1 == settings)
         {
             long klik = Long.valueOf(String.valueOf(p2));
             int s = settings.findIndexOfValue((String)p2);
             Settings.System.putLong(getContentResolver(), "pilih_gambar", (klik));
             settings.setSummary(settings.getEntries()[s]);
-
-
         }
         return true;
     }
-
     private ListPreference settings;
-
-
     public void onCreate(Bundle bundle)
     {
         super.onCreate(bundle);
         addPreferencesFromResource(setResource("custom_image_preference", "xml"));
-
         settings = (ListPreference)findPreference("pilih_gambar");
         long klik = Settings.System.getInt(getContentResolver(), "pilih_gambar", 500);
         settings.setValue(String.valueOf(klik));

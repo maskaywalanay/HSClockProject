@@ -13,6 +13,7 @@
 		android:gravity="center">
 
 		<FrameLayout
+			android:background="@drawable/bg_widget_clock"
 			android:layout_height="@dimen/frame_height"
 			android:layout_width="match_parent"
 			android:id="@+id/frame_container">
@@ -24,35 +25,40 @@
 				android:layout_gravity="center"
 				android:gravity="center">
 
-                <!-- clock hour -->
 				<TextClock
+					android:shadowDy="2.5"
+					android:shadowDx="3.0"
+					android:shadowColor="@color/brown"
+					android:shadowRadius="2.0"
 					android:padding="10.0dip"
 					android:format12Hour="hh"
 					android:format24Hour="hh"
 					android:typeface="serif"
-					android:textStyle="bold"
-					android:id="@+id/clocks_hour"
+					android:textStyle="normal"
+					android:id="@+id/widget_clocks_hour"
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:singleLine="true"
-					android:textColor="@color/green"
-					android:textSize="75sp"
+					android:textColor="@color/white"
+					android:textSize="@dimen/widget_clocks"
 					android:layout_gravity="center"/>
 
-                
-                <!-- clock minute -->
 				<TextClock
+					android:shadowDy="2.5"
+					android:shadowDx="3.0"
+					android:shadowColor="@color/brown"
+					android:shadowRadius="2.0"
 					android:padding="10.0dip"
 					android:format12Hour="mm"
 					android:format24Hour="mm"
 					android:typeface="serif"
 					android:textStyle="normal"
-					android:id="@+id/clocks_minutes"
+					android:id="@+id/widget_clocks_minutes"
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:singleLine="true"
-					android:textColor="@color/brown"
-					android:textSize="75sp"
+					android:textColor="@color/white"
+					android:textSize="@dimen/widget_clocks"
 					android:layout_gravity="center"/>
 
 			</LinearLayout>

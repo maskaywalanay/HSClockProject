@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="frame_height">400.0dip</dimen>
+	<dimen name="widget_clocks">72.0dip</dimen>
+	
+	
 </resources>
 
